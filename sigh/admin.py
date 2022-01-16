@@ -1,3 +1,6 @@
 from django.contrib import admin
+from sigh.models import SighModel
 
-# Register your models here.
+@admin.register(SighModel)
+class Sighmodel(admin.ModelAdmin):
+    pass
